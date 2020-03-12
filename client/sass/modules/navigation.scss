@@ -1,0 +1,16 @@
+.main-navigation {
+    border: 1px solid #000;
+
+    height: 100vh;
+    left: 0;
+    position: fixed;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
+}
