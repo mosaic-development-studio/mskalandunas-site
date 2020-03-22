@@ -5,3 +5,11 @@ html {
         color: $main-text-color;
     }
 }
+
+.sr-only {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    text-indent: -999rem;
+    width: 0;
+}

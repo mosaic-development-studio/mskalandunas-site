@@ -1,0 +1,19 @@
+.navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    ul {
+        list-style-type: none;
+    }
+
+    &--external {
+        @extend .navigation;
+        left: 0;
+    }
+
+    &--internal {
+        @extend .navigation;
+        right: 0;
+    }
+}
