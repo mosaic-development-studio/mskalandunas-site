@@ -1,0 +1,35 @@
+.social-icon {
+    height: $social-icon-height;
+
+    &--github {
+        @extend .social-icon;
+
+        path {
+            stroke: $patterns-blue;
+        }
+    }
+
+    &--instagram {
+        @extend .social-icon;
+
+        path {
+            stroke: $romantic;
+        }
+    }
+
+    &--linkedin {
+        @extend .social-icon;
+
+        path {
+            stroke: $mandys-pink;
+        }
+    }
+
+    &--twitter {
+        @extend .social-icon;
+
+        path {
+            stroke: $persian-pink;
+        }
+    }
+}

@@ -1,8 +1,10 @@
 html {
     background-color: $main-background-color;
+    font-size: $root-font-size;
 
     body {
         color: $main-text-color;
+        font-size: $body-font-size;
     }
 }
 

@@ -1,19 +1,25 @@
 .navigation {
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
 
     ul {
         list-style-type: none;
+
+        li {
+            margin-bottom: 25px;
+        }
     }
 
     &--external {
         @extend .navigation;
-        left: 0;
+        left: 2rem;
+        top: 80%;
+        transform: translateY(-20%);
     }
 
     &--internal {
         @extend .navigation;
         right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
