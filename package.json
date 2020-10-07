@@ -1,0 +1,25 @@
+{
+  "name": "mskalandunas",
+  "version": "0.0.0",
+  "description": "Static site",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskalandunas/mskalandunas.git"
+  },
+  "author": "Mike Skalandunas <mskalandunas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskalandunas/mskalandunas/issues"
+  },
+  "homepage": "https://github.com/mskalandunas/mskalandunas#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}
