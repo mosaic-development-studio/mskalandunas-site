@@ -4,13 +4,32 @@ import include from 'gulp-include';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
 
-gulp.task('html', () => gulp.src('./client/index.html')
+const BUILD_DIRECTORY = './dist';
+
+const SOURCE_DIRECTORY = './client';
+
+const SOURCE = {
+  HTML: SOURCE_DIRECTORY + '/**/*.html',
+  SCSS: SOURCE_DIRECTORY + '/**/*.scss'
+};
+
+const TASKS = {
+  BUILD_DEV: 'build:dev',
+  BUILD_PROD: 'build:prod',
+  HTML: 'HTML',
+  HTML_OPTIMIZED: 'HTML_OPTIMIZED',
+  SCSS: 'SCSS',
+  WATCH_DEV: 'watch:dev',
+  WATCH_PROD: 'watch:prod'
+};
+
+gulp.task(TASKS.HTML, () => gulp.src(SOURCE.HTML)
     .pipe(include())
     .on('error', console.error)
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest(BUILD_DIRECTORY))
 );
 
-gulp.task('html:optimized', () => gulp.src('./client/index.html')
+gulp.task(TASKS.HTML_OPTIMIZED, () => gulp.src(SOURCE.HTML)
     .pipe(include())
     .on('error', console.error)
     .pipe(htmlmin({
@@ -20,34 +39,34 @@ gulp.task('html:optimized', () => gulp.src('./client/index.html')
         removeComments: true,
         removeEmptyAttributes: true
     }))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest(BUILD_DIRECTORY))
 );
 
 gulp.task(
-  'sass',
+  TASKS.SCSS,
   () => gulp
-    .src('./client/scss/base.scss')
+    .src(SOURCE.SCSS)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(rename('style.css'))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest(BUILD_DIRECTORY))
 );
 
-gulp.task('build:dev', gulp.series([
-  'html',
-  'sass'
+gulp.task(TASKS.BUILD_DEV, gulp.series([
+  TASKS.HTML,
+  TASKS.SCSS
 ]));
 
-gulp.task('build:prod', gulp.series([
-  'html:optimized',
-  'sass'
+gulp.task(TASKS.BUILD_PROD, gulp.series([
+  TASKS.HTML_OPTIMIZED,
+  TASKS.SCSS
 ]));
 
-gulp.task('watch:dev', () => {
-  gulp.watch('./client/**/*.html', gulp.series(['html']));
-  gulp.watch('./client/**/*.scss', gulp.series(['sass']));
+gulp.task(TASKS.WATCH_DEV, () => {
+  gulp.watch(SOURCE.HTML, gulp.series([TASKS.HTML]));
+  gulp.watch(SOURCE.SCSS, gulp.series([TASKS.SCSS]));
 });
 
-gulp.task('watch:prod', () => {
-  gulp.watch('./client/**/*.html', gulp.series(['html:optimized']));
-  gulp.watch('./client/**/*.scss', gulp.series(['sass']));
+gulp.task(TASKS.WATCH_PROD, () => {
+  gulp.watch(SOURCE.HTML, gulp.series([TASKS.HTML_OPTIMIZED]));
+  gulp.watch(SOURCE.SCSS, gulp.series([TASKS.SCSS]));
 });
