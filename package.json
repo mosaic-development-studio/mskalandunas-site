@@ -1,45 +1,30 @@
 {
-  "name": "mesa",
-  "version": "1.0.0",
-  "description": "A static site builder.",
-  "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "cssnano": "^4.1.10",
-    "eslint": "^4.19.1",
-    "eslint-config-mosaic": "^0.1.2",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-concat-css": "^3.1.0",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-include": "^2.3.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "mosaic-logger": "^0.1.0",
-    "pre-commit": "^1.2.2",
-    "sass-lint": "^1.12.1"
-  },
-  "pre-commit": [
-    "lint"
-  ],
+  "name": "mskalandunas",
+  "version": "0.0.0",
+  "description": "Static site",
+  "main": "index.js",
   "scripts": {
-    "build": "gulp build",
-    "lint": "eslint --ext=.js . && sass-lint -c -v -q",
-    "start": "gulp default"
+    "build:dev": "gulp build:dev",
+    "build:prod": "gulp build:prod",
+    "watch:dev": "npm run build:dev & gulp watch:dev",
+    "watch:prod": "npm run build:prod & gulp watch:prod"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mskalandunas/mesa.git"
+    "url": "git+https://github.com/mskalandunas/mskalandunas.git"
   },
   "author": "Mike Skalandunas <mskalandunas@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mskalandunas/mesa/issues"
+    "url": "https://github.com/mskalandunas/mskalandunas/issues"
   },
-  "homepage": "https://github.com/mskalandunas/mesa#readme"
+  "homepage": "https://github.com/mskalandunas/mskalandunas#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-include": "^2.4.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
 }
