@@ -6,8 +6,8 @@
   "scripts": {
     "build:dev": "gulp build:dev",
     "build:prod": "gulp build:prod",
-    "watch:dev": "npm run build:dev & gulp watch:dev",
-    "watch:prod": "npm run build:prod & gulp watch:prod"
+    "watch:dev": "gulp watch:dev",
+    "watch:prod": "gulp watch:prod"
   },
   "repository": {
     "type": "git",
