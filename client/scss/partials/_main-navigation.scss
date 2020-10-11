@@ -1,0 +1,18 @@
+@import '../mixins/list';
+
+.main-navigation {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  ol {
+    @include vertical-list;
+
+    transform: rotate(90deg);
+    
+    li {
+      display: inline;  
+    }
+  }
+}

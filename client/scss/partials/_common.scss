@@ -1,7 +1,14 @@
+@import '../mixins/font-smoothing';
 @import '../mixins/heading';
+@import '../mixins/section';
 
 body {
+  @include font-smoothing;
+  
+  background-color: $background-color;
+  color: $font-color;
   font-family: $body-font-stack;
+  font-size: $body-font-size;
 }
 
 h1,
@@ -11,4 +18,8 @@ h4,
 h5,
 h6 {
   @include heading;
+}
+
+section {
+  @include section;
 }

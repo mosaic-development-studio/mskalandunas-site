@@ -1,6 +1,5 @@
-@import '../mixins/_list';
+@import '../mixins/list';
 
 .social-nav ul {
   @include horizontal-list;
-  
 }
