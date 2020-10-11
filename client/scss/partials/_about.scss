@@ -1,0 +1,5 @@
+@import '../mixins/grid';
+
+section.about {
+  @include grid;
+}

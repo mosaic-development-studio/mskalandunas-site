@@ -1,0 +1,52 @@
+@import '../mixins/accent';
+@import '../mixins/list';
+
+section.landing {
+  header {
+    align-items: center;
+    display: flex;
+  
+    .logo {
+      transform: rotate(315deg);
+      width: 75px;
+    
+      &__color-1 {
+        fill: $logo-color-primary;
+      }
+    
+      &__color-2 {
+        fill: $logo-color-secondary;
+      }
+    }
+  
+    div span {
+      display: block;
+      margin-left: 50px;
+  
+      &:not(:first-of-type) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 15em;
+    margin: 0.67em 0 0.151em;
+
+    span {
+      display: block;
+
+      &:not(:first-of-type) {
+        @include accent;
+        
+        margin-left: 1em;
+      }
+    }
+  }
+
+  .social-nav ul {
+    @include horizontal-list;
+
+    text-align: right;
+  }
+}

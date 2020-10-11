@@ -1,0 +1,12 @@
+@mixin scrollbar {
+  all: unset;
+  background-color: $violet-red;
+  display: auto;
+  width: 3px;
+}
+
+@mixin  scrollbar-thumb {
+  background: $background-color;
+  border-radius: 1px;
+  outline: 1px solid $background-color;
+}

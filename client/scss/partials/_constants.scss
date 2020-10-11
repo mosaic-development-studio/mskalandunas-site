@@ -1,11 +1,22 @@
-// Color
-$background-color: #1c1a30;
-$font-color: #A8D2D4;
+// Colors
+$color-azure: #eafefa;
+$color-lucky-point: #100f1a;
+$color-san-juan: #415e6c;
+$violet-red: #ff428e;
+
+$background-color: $color-lucky-point;
+$font-color: $color-azure;
+
+$logo-color-primary: $color-azure;
+$logo-color-secondary: $color-san-juan;
+
+// Container
+$container-max-width: 1200px;
 
 // Font Family
-$body-font-stack: 'Questrial', sans-serif;
-$heading-font-stack: 'Questrial', sans-serif;
+$body-font-stack: 'Spartan', sans-serif;
+$heading-font-stack: 'Spartan', sans-serif;
 
 // Font Size
 $base-font-size: 10px;
-$body-font-size: 1em;
+$body-font-size: 0.8em;

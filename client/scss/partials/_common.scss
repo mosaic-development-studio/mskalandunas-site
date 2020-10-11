@@ -1,6 +1,13 @@
+@import '../mixins/anchor';
+@import '../mixins/container';
 @import '../mixins/font-smoothing';
 @import '../mixins/heading';
+@import '../mixins/scrollbar';
 @import '../mixins/section';
+
+a {
+  @include anchor;
+}
 
 body {
   @include font-smoothing;
@@ -9,6 +16,10 @@ body {
   color: $font-color;
   font-family: $body-font-stack;
   font-size: $body-font-size;
+
+  &::-webkit-scrollbar {
+    @include scrollbar;
+  }
 }
 
 h1,
@@ -18,6 +29,10 @@ h4,
 h5,
 h6 {
   @include heading;
+}
+
+main {
+  @include container;
 }
 
 section {
