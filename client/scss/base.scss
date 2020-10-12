@@ -1,6 +1,11 @@
+// Vendor
 @import 'vendor/normalize';
 
+// Generic
 @import 'partials/constants';
 @import 'partials/common';
+
+// Sections
 @import 'partials/landing';
+@import 'partials/about';
 @import 'partials/main-navigation';

@@ -1,5 +1,6 @@
 @import '../mixins/grid';
 
 section.about {
-  @include grid;
+  display: flex;
+  gap: 2rem;
 }

@@ -3,25 +3,10 @@
 
 section.landing {
   header {
-    align-items: center;
-    display: flex;
-  
-    .logo {
-      transform: rotate(315deg);
-      width: 75px;
-    
-      &__color-1 {
-        fill: $logo-color-primary;
-      }
-    
-      &__color-2 {
-        fill: $logo-color-secondary;
-      }
-    }
-  
-    div span {
+    margin-left: 25px;
+
+    & > span {
       display: block;
-      margin-left: 50px;
   
       &:not(:first-of-type) {
         margin-top: 5px;
@@ -38,7 +23,7 @@ section.landing {
 
       &:not(:first-of-type) {
         @include accent;
-        
+
         margin-left: 1em;
       }
     }

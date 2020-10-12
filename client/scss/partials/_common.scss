@@ -20,6 +20,14 @@ body {
   &::-webkit-scrollbar {
     @include scrollbar;
   }
+
+  &::-webkit-scrollbar-thumb {
+    @include scrollbar-thumb;
+  }
+
+  &::-webkit-scrollbar-track-piece:start {
+    @include scrollbar-trackpiece-top;
+  }
 }
 
 h1,
