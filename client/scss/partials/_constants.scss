@@ -1,9 +1,9 @@
 // Colors
 $color-azure: #eafefa;
+$color-hot-pink: #ff6ba6;
 $color-lucky-point: #100f1a;
 $color-san-juan: #415e6c;
 $color-pale-turquoise: #a8ffef;
-$color-violet-red: #ff428e;
 
 $accent-blue: $color-pale-turquoise;
 
@@ -32,3 +32,6 @@ $font-weight-semibold: 500;
 // Spacing
 $spacing-medium: 1rem;
 $spacing-gap: 5rem;
+
+// Timing
+$transition-time: 0.15s;
