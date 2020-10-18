@@ -2,6 +2,7 @@
 @import '../mixins/container';
 @import '../mixins/font-smoothing';
 @import '../mixins/heading';
+@import '../mixins/list';
 @import '../mixins/paragraph';
 @import '../mixins/scrollbar';
 @import '../mixins/section';
@@ -50,4 +51,8 @@ p {
 
 section {
   @include section;
+}
+
+ul {
+  @include vertical-list;
 }

@@ -1,0 +1,14 @@
+.tech-and-skills {
+  h2 {
+    font-size: $title-font-size;
+    margin-bottom: 0;
+  }
+
+  h3:not(:first-of-type) {
+    margin-top: 50px;
+  }
+
+  ul li {
+    margin-top: 15px;
+  }
+}

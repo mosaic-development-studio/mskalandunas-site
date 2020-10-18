@@ -23,5 +23,12 @@
     h2 {
       line-height: 1.85rem;
     }
+
+    small {
+      color: $accent-blue;
+      display: block;
+      font-weight: $font-weight-bold;
+      margin-top: 15rem;
+    }
   }
 }
