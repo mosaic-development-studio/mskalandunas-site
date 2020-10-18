@@ -1,0 +1,34 @@
+@import '../mixins/grid';
+
+.about {
+  &__info {
+    max-width: 400px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 780px;
+
+    dl {
+      dd {
+        color: $accent-blue;
+        font-weight: $font-weight-bold;
+        margin: $spacing-medium 0 0;
+      }
+    }
+
+    h2 {
+      line-height: 1.85rem;
+    }
+
+    small {
+      color: $accent-blue;
+      display: block;
+      font-weight: $font-weight-bold;
+      margin-top: 15rem;
+    }
+  }
+}

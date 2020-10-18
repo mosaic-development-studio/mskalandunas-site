@@ -1,7 +1,35 @@
+@import '../mixins/anchor';
+@import '../mixins/container';
+@import '../mixins/font-smoothing';
 @import '../mixins/heading';
+@import '../mixins/list';
+@import '../mixins/paragraph';
+@import '../mixins/scrollbar';
+@import '../mixins/section';
+
+a {
+  @include anchor;
+}
 
 body {
+  @include font-smoothing;
+  
+  background-color: $background-color;
+  color: $font-color;
   font-family: $body-font-stack;
+  font-size: $body-font-size;
+
+  &::-webkit-scrollbar {
+    @include scrollbar;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @include scrollbar-thumb;
+  }
+
+  &::-webkit-scrollbar-track-piece:start {
+    @include scrollbar-trackpiece-top;
+  }
 }
 
 h1,
@@ -11,4 +39,20 @@ h4,
 h5,
 h6 {
   @include heading;
+}
+
+main {
+  @include container;
+}
+
+p {
+  @include paragraph;
+}
+
+section {
+  @include section;
+}
+
+ul {
+  @include vertical-list;
 }

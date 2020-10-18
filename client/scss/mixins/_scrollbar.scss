@@ -1,0 +1,16 @@
+@mixin scrollbar {
+  all: unset;
+  background-color: $accent-blue;
+  display: auto;
+  width: 5px;
+}
+
+@mixin  scrollbar-thumb {
+  background: $background-color;
+  border-radius: 1px;
+  outline: 1px solid $background-color;
+}
+
+@mixin scrollbar-trackpiece-top {
+  background: $background-color;
+}

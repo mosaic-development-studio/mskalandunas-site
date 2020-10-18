@@ -4,82 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mike Skalandunas | Programmer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!--
-      Make sure to clean up h tag hierarchy if
-      this doesn't seem like a good implementation
-      plan
-      -->
-  <h1>
-    LOGO
-  </h1>
-  <header>
-    <span>Mike Skalandunas</span>
-    <span>Curious Programmer</span>
-    <h2>HELLO WORLD</h2>
-    <span>v0.0.0 // 10.05.2020</span>
-  </header>
-  <nav class="social-nav">
-    <ul>
-      <li>
-        <a href="https://github.com/mskalandunas/" rel="noopener noreferrer" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/mskalandunas/" rel="noopener noreferrer" target="_blank">Instagram</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/mskalandunas" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-      </li>
-      <li>
-        <a href="https://medium.com/@mskalandunas" rel="noopener noreferrer" target="_blank">Medium</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/mskalandunas" rel="noopener noreferrer" target="_blank">Twitter</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- <nav>
-    <ul>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Works</a>
-      </li>
-      <li>
-        <a href="#">Skills</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li> 
-    </ul>
-  </nav> -->
+  <main>
+    <section class="landing">
+      <header>
+        <span>Mike Skalandunas</span>
+        <span>Curious Programmer</span>
+      </header>
+      <h1>
+        <span>HELLO</span>
+        <span>.WORLD</span>
+      </h1>
+      <nav class="social-nav">
+        <ul>
+          <li>
+            <a href="https://github.com/mskalandunas/" rel="noopener noreferrer" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mskalandunas/" rel="noopener noreferrer" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mskalandunas" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://medium.com/@mskalandunas" rel="noopener noreferrer" target="_blank">Medium</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/mskalandunas" rel="noopener noreferrer" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
-  <!-- About -->
-  <section>
-    <h3>I'm a curious programmer interested in creating applications that solve problems through elegant design and implementation.</h3>
-    <p>I've worked in Seattle's start-up space as well as on various open-source projecs.  I love being challenged with new technology and unfamiliar product needs.  Extensible and maintainable software with fluid user experiences are my goal.</p>
-    <p>Please feel free to contact me if you'd like to work together or just to say hello.</p>
-    <footer>v0.0.0</footer>
-  </section>
+    <section class="about">
+      <div class="about__wrapper">
+        <div class="about__info">
+          <h2>Hello, my name is Mike. I'm currently a Senior Software Engineer @ Hearsay Systems.</h2>
+          <p>I spend my time tinkering with programming languages, frameworks, and working out ways to make software more maintainable and extensible.</p>
+          <p>
+            <a href="https://mosaicmusic.io" target="_blank" rel="noopener noreferrer">I also make music.</a>
+          </p>
+          <p>Feel free to reach out to me via email or social media if you'd like to chat.</p>
+          <small>v0.0.1</small>
+        </div>
+        <dl>
+          <dt>Email</dt>
+          <dd>mskalandunas[at]gmail</dd>
+        </dl>
+      </div>
+    </section>
 
-  <!-- Projects -->
-  <!-- <section>
+    <!-- <section class="works">
+      <h2>
+        Title
+      </h2>
 
-  </section> -->
+    </section> -->
 
-  <!-- Skills -->
-  <!-- <section>
+    <section class="tech-and-skills">
+      <h2>Tech<br>&amp; Skills</h2>
+      <h3>Tech</h3>
+      <ul>
+        <li>
+          Languages: JavaScript, TypeScript, Python, Rust, C#, CSS, SCSS
+        </li>
+        <li>
+          Libraries: React, Redux, React-Redux, Backbone, Vue, Svelte
+        </li>
+        <li>
+          Frameworks: Node.js, Next.js, Django, Puppeteer, .NET
+        </li>
+        <li>
+          Build/Bundle: Webpack, Parcel, Gulp, Grunt, CommonJS
+        </li>
+        <li>
+          Database: SQL, MongoDB, GraphQL
+        </li>
+      </ul>
 
-  </section> -->
-
-  <footer>
-    <span>Seattle, WA</span>
-    <span>12:00:46</span>
-    <nav class="social-nav">...</nav>
-  </footer>
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          Domain-Driven Design
+        </li>
+        <li>
+          AGILE Methodology
+        </li>        
+        <li>
+          Website, Web Application, and Desktop Application Development
+        </li>
+        <li>
+          System Design
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>

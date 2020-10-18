@@ -1,0 +1,10 @@
+.works {
+  h2 {
+    font-size: $title-font-size;
+  }
+
+  &__image {
+    width: 50vw;
+    height: 79.55vw;
+  }
+}

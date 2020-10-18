@@ -1,0 +1,11 @@
+@mixin anchor {
+  color: inherit;
+  font-weight: $font-weight-semibold;
+  position: relative;
+  transition: color $transition-time ease-in-out;
+
+  &:focus,
+  &:hover {
+    color: $accent-blue;
+  }
+}
