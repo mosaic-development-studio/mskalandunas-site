@@ -2,6 +2,7 @@
 @import '../mixins/container';
 @import '../mixins/font-smoothing';
 @import '../mixins/heading';
+@import '../mixins/paragraph';
 @import '../mixins/scrollbar';
 @import '../mixins/section';
 
@@ -41,6 +42,10 @@ h6 {
 
 main {
   @include container;
+}
+
+p {
+  @include paragraph;
 }
 
 section {

@@ -1,3 +1,4 @@
 @mixin heading {
   font-family: $heading-font-stack;
+  font-weight: $font-weight-semibold;
 }

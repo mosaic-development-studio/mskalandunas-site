@@ -1,7 +1,8 @@
-@import '../mixins/accent';
 @import '../mixins/list';
 
-section.landing {
+.landing {
+  min-height: 80vh;
+
   header {
     margin-left: 25px;
 
@@ -22,9 +23,7 @@ section.landing {
       display: block;
 
       &:not(:first-of-type) {
-        @include accent;
-
-        margin-left: 1em;
+        margin-left: 1.225em;
       }
     }
   }
@@ -32,6 +31,7 @@ section.landing {
   .social-nav ul {
     @include horizontal-list;
 
+    margin-top: $spacing-gap;
     text-align: right;
   }
 }
