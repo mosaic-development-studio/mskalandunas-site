@@ -107,9 +107,7 @@
     (function() {
       'use strict';
 
-      const body = document.getElementsByTagName('body')[0];
-
-      function transitionBackgroundColor() {
+      function transitionBackgroundColor(element) {
         const COLORS = [
           '#19251a',
           '#1c1a30',
@@ -123,7 +121,7 @@
         }
 
         setInterval(function() {
-          body.setAttribute(
+          element.setAttribute(
             'style',
             'background-color: '
               + COLORS[randomNumber(0, COLORS.length - 1)]
@@ -131,7 +129,7 @@
         }, COLOR_CHANGE_INTERVAL);
       }
 
-      transitionBackgroundColor();
+      transitionBackgroundColor(document.getElementsByTagName('element')[0]);
     })();
   </script>
 </body>
