@@ -18,6 +18,7 @@ body {
   color: $font-color;
   font-family: $body-font-stack;
   font-size: $body-font-size;
+  transition: background-color 10s ease-in-out;
 
   &::-webkit-scrollbar {
     @include scrollbar;

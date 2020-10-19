@@ -102,5 +102,35 @@
       </ul>
     </section>
   </main>
+
+  <script type="text/JavaScript">
+    (function() {
+      'use strict';
+
+      function transitionBackgroundColor(element) {
+        const COLORS = [
+          '#19251a',
+          '#1c1a30',
+          '#0b0c1f',
+          '#000'
+        ];
+        const COLOR_CHANGE_INTERVAL = 5000;
+
+        function randomNumber(min, max) {
+          return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        setInterval(function() {
+          element.setAttribute(
+            'style',
+            'background-color: '
+              + COLORS[randomNumber(0, COLORS.length - 1)]
+          );
+        }, COLOR_CHANGE_INTERVAL);
+      }
+
+      transitionBackgroundColor(document.getElementsByTagName('element')[0]);
+    })();
+  </script>
 </body>
 </html>
