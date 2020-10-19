@@ -1,4 +1,8 @@
 @mixin section {
   margin-top: $spacing-gap;
   width: 100%;
+
+  &:not(:first-of-type) {
+    margin-top: $spacing-gap;
+  }
 }
